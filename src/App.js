@@ -6,6 +6,7 @@ import { store } from './Redux/Store';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Create from './Components/Create/Create';
 import Read from './Components/Read/Read';
+import Edit from './Components/Edit/Edit';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/create' element={<Create/>}/>
         <Route path='/read' element={<Read/>}/>
+        <Route path='/edit/:id' element={<Edit/>}/>
       </Routes>
       </BrowserRouter>
       
